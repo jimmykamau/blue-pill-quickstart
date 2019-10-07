@@ -6,13 +6,8 @@ Quickstart a Rust project for the [blue pill](https://wiki.stm32duino.com/index.
 
 This section assumes your computer is ready to hack on a blue pill.
 
-Get and cleanup:
-
 ```shell
-git clone https://github.com/TeXitoi/blue-pill-quickstart.git my-new-project
-cd my-new-project
-rm -fr .git LICENSE README.md st-link-v2-blue-pill.jpg
-git init
+cargo generate --git https://github.com/jimmykamau/blue-pill-quickstart
 ```
 
 Edit `Cargo.toml` for author and project name, and you're ready to go.
@@ -39,8 +34,6 @@ cd blue-pill-quickstart
 ```
 
 First connect your ST-Link to your blue pill, then connect the ST-Link to your computer.
-
-![ST-Link V2 to blue pill](st-link-v2-blue-pill.jpg)
 
 Launch openocd:
 
